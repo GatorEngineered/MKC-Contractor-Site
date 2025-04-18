@@ -1,0 +1,20 @@
+.sidebar {
+    width: 35%;
+    list-style: none;
+    padding: 0;
+  }
+  button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    background: var(--soft-white);
+    color: var(--midnight-blue);
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+  .active {
+    background: var(--deep-teal);
+    color: var(--soft-white);
+  }
+  

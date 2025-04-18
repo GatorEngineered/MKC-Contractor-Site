@@ -1,0 +1,149 @@
+/* ======================== */
+/* NAVIGATION BAR STYLES    */
+/* ======================== */
+
+.border {
+    background-color: var(--midnight-blue);
+    width: 100%;
+    height: 5em;
+    margin-top: 0.7em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ======================== */
+/* LOGO STYLES             */
+/* ======================== */
+
+.logo {
+    background-color: var(--deep-teal);
+    position: relative;
+    height: 7em;
+    width: 10%;
+    margin-left: 1.7em;
+    color: var(--copper-gold);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    word-break: break-word;
+    font-size: 1.3rem;
+    padding: 0.9em;
+    text-align: center;
+    line-height: 1.3;
+    position: absolute;
+    top: -0.2em;
+    border: solid 1% var(--warm-gray);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ======================== */
+/* NAVIGATION MENU         */
+/* ======================== */
+
+.navigation {
+    position: relative;
+    color: var(--soft-white);
+    left: 23em;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    gap: 13em;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.navigation li {
+    position: relative;
+    padding-bottom: 1%;
+}
+
+/* ======================== */
+/* UNDERLINE EFFECT        */
+/* ======================== */
+
+/* Apply only to navigation items EXCEPT "Services" */
+.navigation li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--copper-gold);
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.navigation li:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* ======================== */
+/* DROPDOWN MENU STYLES    */
+/* ======================== */
+
+/* Services container */
+.services {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.services ul{
+    display: block;
+    margin: 0;
+    padding: 0 ;
+}
+
+.dropdown {
+    position: absolute; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 100%; 
+    left: 0;
+    background-color: var(--midnight-blue);
+    border-radius: 3%;
+    padding: 0;
+    list-style: none;
+    width: 8.5em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    gap: 0; /* Ensures vertical stacking */
+}
+
+
+/* Show dropdown when hovered */
+.show {
+    display: flex;
+    flex-direction: column; 
+}
+
+/* Dropdown items */
+.dropdown li {
+    padding: 8px 12px;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+    width: 100%; 
+    margin: 0;
+    display: block;
+}
+
+/* Ensure links fill the dropdown */
+.dropdown li a {
+    color: var(--soft-white);
+    text-decoration: none;
+    display: block; /* Ensure full clickable area */
+    padding: 10px;
+}
+
+/* Hover effect */
+.dropdown li:hover {
+    background-color: var(--deep-teal);
+}

@@ -1,0 +1,19 @@
+/* ==============================
+High-End Contractor Website - CSS Guide
+   ============================== */
+
+/* --- Color Variables --- */
+:root {
+    --deep-teal: #004E64; /* Primary Branding Color */
+    --warm-gray: #D9D9D9; /* Neutral Background */
+    --copper-gold: #C6905B; /* Accent & Call-to-Action */
+    --soft-white: #FCFCFC; /* Clean & Fresh Background */
+    --midnight-blue: #1C1F33; /* Typography & Borders */
+}
+
+/* --- Global Styles --- */
+body {
+    background-color: var(--soft-white);
+    color: var(--midnight-blue);
+    font-family: 'Poppins', sans-serif;
+}

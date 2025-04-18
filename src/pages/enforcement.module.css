@@ -1,0 +1,170 @@
+
+
+@media (min-width: 1600px) {
+    .title {
+        font-size: 5.5em;
+    }
+}
+
+.display {
+    background-color: var(--midnight-blue);
+    width: 100%;
+    height: 22rem;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlayWrapper {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-size: 6.9em;
+    color: var(--soft-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 22rem;
+    
+}
+
+
+
+.reason {
+    background-color: var(--warm-gray);
+    width: 100%;
+    height: 27rem;
+
+}
+
+.outlinereason {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.reason_title {
+    font-size: 3.3rem;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.reason_context {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: 1.2%;
+    padding: 2%;
+    line-height: 1.6;
+    word-spacing: 0.15em;
+    letter-spacing: 0.03em;
+    overflow-wrap: break-word;
+
+}
+
+.ctaHire{
+    border-radius: 9999px;
+    width: 20em;
+    height: 10%;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: var(--soft-white);
+   position: relative;
+   bottom: 3.4em;
+}
+
+.understanding {
+    width: 100%;
+    height: 59rem;
+    background-color: var(--soft-white);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    color: var(--midnight-blue);
+    padding-top: 3%;
+}
+
+
+.gridRow h3,
+.gridRowAlt h3,
+.gridRow p,
+.gridRowAlt p {
+    color: var(--midnight-blue);
+    text-align: center;
+}
+
+
+/* Standard row: H3 left, P right */
+.gridRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    padding: 2rem;
+    border: 2px soild var(--midnight-blue);
+    background-color: rgba(28, 31, 51, 0.3);
+}
+
+/* Alternate row: P left, H3 right */
+.gridRowAlt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    padding: 2rem;
+    color: var(--midnight-blue);
+    direction: rtl;
+}
+
+.gridRowAlt>* {
+    direction: ltr;
+}
+
+.gridRow h3,
+.gridRowAlt h3 {
+    font-size: 1.5em;
+    color: var(--midnight-blue);
+    justify-self: center;
+    align-self: center;
+    
+}
+
+.gridRow p,
+.gridRowAlt p {
+    font-size: 1.1em;
+    line-height: 2.5;
+    color: var(--midnight-blue);
+}
+
+.btnArea{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--soft-white);
+}
+
+.btnArea button{
+    background-color: rgba(28, 31, 51, 1);
+    color: var(--soft-white);
+    border-radius: 9999px;
+    width: 20em;
+    height: 10%;
+    font-size: 1.2em;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* ← added */
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.btnArea button:hover {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px); /* optional lift effect */
+}

@@ -1,0 +1,35 @@
+/* ===== Global Styles ===== */
+
+/* Optional: Keep color variables in index.css if needed globally */
+:root {
+  --deep-teal: #004E64;
+  --warm-gray: #D9D9D9;
+  --copper-gold: #C6905B;
+  --soft-white: #FCFCFC;
+  --midnight-blue: #1C1F33;
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a default body style */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--soft-white);
+  color: var(--midnight-blue);
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default list styles */
+ul {
+  list-style: none;
+}
